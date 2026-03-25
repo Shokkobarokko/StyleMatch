@@ -6,27 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FCD255072F61FFFF008062E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD254FD2F61FFFF008062E7 /* AppDelegate.swift */; };
+		FCD255082F61FFFF008062E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD255042F61FFFF008062E7 /* SceneDelegate.swift */; };
+		FCD255092F61FFFF008062E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD255052F61FFFF008062E7 /* ViewController.swift */; };
+		FCD2550A2F61FFFF008062E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD254FE2F61FFFF008062E7 /* Assets.xcassets */; };
+		FCD2550C2F61FFFF008062E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD255012F61FFFF008062E7 /* LaunchScreen.storyboard */; };
+		FCD2550D2F61FFFF008062E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD255032F61FFFF008062E7 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FCD254E52F61FFCA008062E7 /* StyleMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD254FD2F61FFFF008062E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCD254FE2F61FFFF008062E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD254FF2F61FFFF008062E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD255002F61FFFF008062E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCD255022F61FFFF008062E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCD255042F61FFFF008062E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCD255052F61FFFF008062E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FCD254F72F61FFCB008062E7 /* Exceptions for "StyleMatch" folder in "StyleMatch" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FCD254E42F61FFCA008062E7 /* StyleMatch */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FCD254E72F61FFCA008062E7 /* StyleMatch */ = {
+		FCB6F03C2F6D58B70024A94F /* Utilities */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FCD254F72F61FFCB008062E7 /* Exceptions for "StyleMatch" folder in "StyleMatch" target */,
-			);
-			path = StyleMatch;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FCB6F03D2F6D58C30024A94F /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FCB6F03E2F6D58CC0024A94F /* Controllers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FCB6F03F2F6D58D40024A94F /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCB6F0402F6D58DB0024A94F /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCB6F0412F6D58E20024A94F /* Application */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FCD2550E2F620006008062E7 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +78,7 @@
 		FCD254DC2F61FFCA008062E7 = {
 			isa = PBXGroup;
 			children = (
-				FCD254E72F61FFCA008062E7 /* StyleMatch */,
+				FCD255062F61FFFF008062E7 /* StyleMatch */,
 				FCD254E62F61FFCA008062E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +89,27 @@
 				FCD254E52F61FFCA008062E7 /* StyleMatch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD255062F61FFFF008062E7 /* StyleMatch */ = {
+			isa = PBXGroup;
+			children = (
+				FCB6F0412F6D58E20024A94F /* Application */,
+				FCB6F0402F6D58DB0024A94F /* Models */,
+				FCB6F03F2F6D58D40024A94F /* Views */,
+				FCB6F03E2F6D58CC0024A94F /* Controllers */,
+				FCB6F03D2F6D58C30024A94F /* Services */,
+				FCB6F03C2F6D58B70024A94F /* Utilities */,
+				FCD2550E2F620006008062E7 /* Resources */,
+				FCD254FD2F61FFFF008062E7 /* AppDelegate.swift */,
+				FCD254FE2F61FFFF008062E7 /* Assets.xcassets */,
+				FCD254FF2F61FFFF008062E7 /* Info.plist */,
+				FCD255012F61FFFF008062E7 /* LaunchScreen.storyboard */,
+				FCD255032F61FFFF008062E7 /* Main.storyboard */,
+				FCD255042F61FFFF008062E7 /* SceneDelegate.swift */,
+				FCD255052F61FFFF008062E7 /* ViewController.swift */,
+			);
+			path = StyleMatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +128,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FCD254E72F61FFCA008062E7 /* StyleMatch */,
+				FCB6F03C2F6D58B70024A94F /* Utilities */,
+				FCB6F03D2F6D58C30024A94F /* Services */,
+				FCB6F03E2F6D58CC0024A94F /* Controllers */,
+				FCB6F03F2F6D58D40024A94F /* Views */,
+				FCB6F0402F6D58DB0024A94F /* Models */,
+				FCB6F0412F6D58E20024A94F /* Application */,
+				FCD2550E2F620006008062E7 /* Resources */,
 			);
 			name = StyleMatch;
 			packageProductDependencies = (
@@ -122,6 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD2550A2F61FFFF008062E7 /* Assets.xcassets in Resources */,
+				FCD2550C2F61FFFF008062E7 /* LaunchScreen.storyboard in Resources */,
+				FCD2550D2F61FFFF008062E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +195,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD255072F61FFFF008062E7 /* AppDelegate.swift in Sources */,
+				FCD255082F61FFFF008062E7 /* SceneDelegate.swift in Sources */,
+				FCD255092F61FFFF008062E7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCD255012F61FFFF008062E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD255002F61FFFF008062E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCD255032F61FFFF008062E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD255022F61FFFF008062E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FCD254F92F61FFCB008062E7 /* Debug */ = {
@@ -160,12 +245,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Parsadanyan.StyleMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -191,12 +280,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Parsadanyan.StyleMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
