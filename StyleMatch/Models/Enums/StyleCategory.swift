@@ -19,7 +19,6 @@ enum StyleCategory: String, CaseIterable, Codable {
         }
     }
     
-    /// Эмодзи для тегов — делает UI живее
     var emoji: String {
         switch self {
         case .casual: return "👕"
@@ -31,7 +30,6 @@ enum StyleCategory: String, CaseIterable, Codable {
         }
     }
     
-    /// Цвет тега
     var color: String {
         switch self {
         case .casual: return "#7B9E87"
