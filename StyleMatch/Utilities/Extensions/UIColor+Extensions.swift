@@ -6,7 +6,7 @@ extension UIColor {
     static let smCream = UIColor(hex: "#FAF7F2")
     static let smGold = UIColor(hex: "#C9A84C")
     static let smGoldLight = UIColor(hex: "#E8C97A")
-    static let DustyRose = UIColor(hex: "#C4956A")
+    static let smDustyRose = UIColor(hex: "#C4956A")
     static let smGray = UIColor(hex: "#8A8A8A")
     static let smLightGray = UIColor(hex: "#E5E0D8")
     static let smCardBackground = UIColor(hex: "#F0EBE3")
