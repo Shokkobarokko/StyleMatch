@@ -11,21 +11,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let testVC = UIViewController()
-        testVC.view.backgroundColor = .smBackGround
-        
-        let label = UILabel()
-        label.text = "StyleMatch"
-        label.font = .smLargeTitle
-        label.textColor = .smPrimaryText
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        testVC.view.addSubview(label)
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: testVC.view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: testVC.view.centerYAnchor)
-        ])
+//Код для проверки стилей и шрифтов
+//        let testVC = UIViewController()
+//        testVC.view.backgroundColor = .smBackGround
+//        
+//        let label = UILabel()
+//        label.text = "StyleMatch"
+//        label.font = .smLargeTitle
+//        label.textColor = .smPrimaryText
+//        label.textAlignment = .center
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        testVC.view.addSubview(label)
+//        NSLayoutConstraint.activate([
+//            label.centerXAnchor.constraint(equalTo: testVC.view.centerXAnchor),
+//            label.centerYAnchor.constraint(equalTo: testVC.view.centerYAnchor)
+//        ])
         
         
         
@@ -33,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         temporaryViewController.view.backgroundColor = .white
         temporaryViewController.title = "StyleMatch"
         
-        window.rootViewController = UINavigationController(rootViewController: testVC)
+        window.rootViewController = UINavigationController(rootViewController: temporaryViewController)
         self.window = window
         window.makeKeyAndVisible()
     }

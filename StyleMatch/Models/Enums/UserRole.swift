@@ -6,8 +6,10 @@ enum UserRole: String, Codable {
     
     var displayName: String {
         switch self {
-        case .client: return "Клиент"
-        case .stylist: return "Стилист"
+        case .client:
+            return "Клиент"
+        case .stylist:
+            return "Стилист"
         }
     }
 }

@@ -1,11 +1,11 @@
 import UIKit
 
 enum RequestStatus: String, Codable {
-    case pending = "pending"         // Отправлен, ждёт ответа стилиста
-    case accepted = "accepted"       // Стилист принял заказ
-    case inProgress = "inProgress"   // Стилист работает над подборкой
-    case completed = "completed"     // Работа завершена
-    case cancelled = "cancelled"     // Отменён
+    case pending = "pending"
+    case accepted = "accepted"
+    case inProgress = "inProgress"
+    case completed = "completed"
+    case cancelled = "cancelled"
     
     var displayName: String {
         switch self {

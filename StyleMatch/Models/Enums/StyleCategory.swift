@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 enum StyleCategory: String, CaseIterable, Codable {
     case casual = "casual"
@@ -30,14 +30,20 @@ enum StyleCategory: String, CaseIterable, Codable {
         }
     }
     
-    var color: String {
+    var color: UIColor {
         switch self {
-        case .casual: return "#7B9E87"
-        case .evening: return "#9B72AA"
-        case .business: return "#4A7FA5"
-        case .sport: return "#E07B54"
-        case .romantic: return "#C47B8A"
-        case .minimalism: return "#8A8A8A"
+        case .casual: 
+            return .smDustyRose
+        case .evening:
+            return .smGold
+        case .business:
+            return .smCharcoal
+        case .sport:
+            return .smSuccess
+        case .romantic:
+            return .smDustyRose
+        case .minimalism:
+            return .smGray
         }
     }
 }
