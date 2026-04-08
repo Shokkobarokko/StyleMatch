@@ -97,60 +97,60 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        
-        // ВРЕМЕННЫЙ КОД ДЛЯ ПРОВЕРКИ МОДЕЛЕЙ
-        let testVC = UIViewController()
-        testVC.view.backgroundColor = .smBackground
-        
-        let textView = UITextView()
-        textView.font = .smCaption
-        textView.textColor = .smPrimaryText
-        textView.backgroundColor = .clear
-        textView.isEditable = false
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        
-        // Тестируем создание стилиста
-        let testStylist = Stylist(
-            userId: "test123",
-            name: "Анна Иванова",
-            city: "Москва",
-            experience: 5,
-            specializations: [.casual, .evening],
-            consultationPrice: 3000,
-            description: "Профессиональный стилист с 5-летним опытом",
-            isVerified: true
-        )
-        
-        // Тестируем создание клиента
-        let testClient = Client(
-            userId: "client456",
-            name: "Мария Петрова",
-            age: 28,
-            height: 165,
-            weight: 55,
-            bodyType: .hourglass,
-            stylePreferences: [.casual, .romantic],
-            budgetMin: 5000,
-            budgetMax: 20000,
-            city: "Санкт-Петербург"
-        )
-        
-        var infoText = "ПРОВЕРКА МОДЕЛЕЙ ДАННЫХ:\n\n"
-        infoText += "=== Стилист ===\n"
-        infoText += "Имя: \(testStylist.name)\n"
-        infoText += "Город: \(testStylist.city)\n"
-        infoText += "Цена: \(testStylist.priceString)\n"
-        infoText += "Рейтинг: \(testStylist.ratingString)\n"
-        infoText += "Верифицирован: \(testStylist.isVerified ? "✓ Да" : "Нет")\n\n"
-        
-        infoText += "=== Клиент ===\n"
-        infoText += "Имя: \(testClient.name)\n"
-        infoText += "Возраст: \(testClient.age)\n"
-        infoText += "Тип фигуры: \(testClient.bodyType.displayName)\n"
-        infoText += "Бюджет: \(Int(testClient.budgetMin)) - \(Int(testClient.budgetMax)) ₽\n"
-        
-        textView.text = infoText
-        
+//        
+//        // ВРЕМЕННЫЙ КОД ДЛЯ ПРОВЕРКИ МОДЕЛЕЙ
+//        let testVC = UIViewController()
+//        testVC.view.backgroundColor = .smBackground
+//        
+//        let textView = UITextView()
+//        textView.font = .smCaption
+//        textView.textColor = .smPrimaryText
+//        textView.backgroundColor = .clear
+//        textView.isEditable = false
+//        textView.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        // Тестируем создание стилиста
+//        let testStylist = Stylist(
+//            userId: "test123",
+//            name: "Анна Иванова",
+//            city: "Москва",
+//            experience: 5,
+//            specializations: [.casual, .evening],
+//            consultationPrice: 3000,
+//            description: "Профессиональный стилист с 5-летним опытом",
+//            isVerified: true
+//        )
+//        
+//        // Тестируем создание клиента
+//        let testClient = Client(
+//            userId: "client456",
+//            name: "Мария Петрова",
+//            age: 28,
+//            height: 165,
+//            weight: 55,
+//            bodyType: .hourglass,
+//            stylePreferences: [.casual, .romantic],
+//            budgetMin: 5000,
+//            budgetMax: 20000,
+//            city: "Санкт-Петербург"
+//        )
+//        
+//        var infoText = "ПРОВЕРКА МОДЕЛЕЙ ДАННЫХ:\n\n"
+//        infoText += "=== Стилист ===\n"
+//        infoText += "Имя: \(testStylist.name)\n"
+//        infoText += "Город: \(testStylist.city)\n"
+//        infoText += "Цена: \(testStylist.priceString)\n"
+//        infoText += "Рейтинг: \(testStylist.ratingString)\n"
+//        infoText += "Верифицирован: \(testStylist.isVerified ? "✓ Да" : "Нет")\n\n"
+//        
+//        infoText += "=== Клиент ===\n"
+//        infoText += "Имя: \(testClient.name)\n"
+//        infoText += "Возраст: \(testClient.age)\n"
+//        infoText += "Тип фигуры: \(testClient.bodyType.displayName)\n"
+//        infoText += "Бюджет: \(Int(testClient.budgetMin)) - \(Int(testClient.budgetMax)) ₽\n"
+//        
+//        textView.text = infoText
+//        
         // Вывод в консоль
         print("=== ПРОВЕРКА МОДЕЛЕЙ ===")
         print("Стилист: \(testStylist.name), цена: \(testStylist.priceString)")
